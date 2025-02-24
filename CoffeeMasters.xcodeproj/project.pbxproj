@@ -6,13 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		01B2BA742D6C14AC005BE04A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 01B2BA732D6C14AC005BE04A /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		01B2BA1E2D6BEDA5005BE04A /* CoffeeMasters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeMasters.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B2BA772D6C235C005BE04A /* CoffeeMasters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeMasters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		01B2BA792D6C2375005BE04A /* Exceptions for "CoffeeMasters" folder in "CoffeeMasters" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 01B2BA1D2D6BEDA5005BE04A /* CoffeeMasters */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		01B2BA202D6BEDA5005BE04A /* CoffeeMasters */ = {
+		01B2BA4C2D6C092D005BE04A /* CoffeeMasters */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				01B2BA792D6C2375005BE04A /* Exceptions for "CoffeeMasters" folder in "CoffeeMasters" target */,
+			);
 			path = CoffeeMasters;
 			sourceTree = "<group>";
 		};
@@ -23,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01B2BA742D6C14AC005BE04A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,17 +50,9 @@
 		01B2BA152D6BEDA5005BE04A = {
 			isa = PBXGroup;
 			children = (
-				01B2BA202D6BEDA5005BE04A /* CoffeeMasters */,
-				01B2BA1F2D6BEDA5005BE04A /* Products */,
+				01B2BA4C2D6C092D005BE04A /* CoffeeMasters */,
+				01B2BA772D6C235C005BE04A /* CoffeeMasters.app */,
 			);
-			sourceTree = "<group>";
-		};
-		01B2BA1F2D6BEDA5005BE04A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				01B2BA1E2D6BEDA5005BE04A /* CoffeeMasters.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -61,13 +71,14 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				01B2BA202D6BEDA5005BE04A /* CoffeeMasters */,
+				01B2BA4C2D6C092D005BE04A /* CoffeeMasters */,
 			);
 			name = CoffeeMasters;
 			packageProductDependencies = (
+				01B2BA732D6C14AC005BE04A /* Alamofire */,
 			);
 			productName = CoffeeMasters;
-			productReference = 01B2BA1E2D6BEDA5005BE04A /* CoffeeMasters.app */;
+			productReference = 01B2BA772D6C235C005BE04A /* CoffeeMasters.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -94,8 +105,11 @@
 			);
 			mainGroup = 01B2BA152D6BEDA5005BE04A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				01B2BA722D6C14AC005BE04A /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 01B2BA1F2D6BEDA5005BE04A /* Products */;
+			productRefGroup = 01B2BA152D6BEDA5005BE04A;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -255,9 +269,9 @@
 				DEVELOPMENT_TEAM = G6T529XN3U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoffeeMasters/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -288,9 +302,9 @@
 				DEVELOPMENT_TEAM = G6T529XN3U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoffeeMasters/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		01B2BA722D6C14AC005BE04A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01B2BA732D6C14AC005BE04A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01B2BA722D6C14AC005BE04A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 01B2BA162D6BEDA5005BE04A /* Project object */;
 }
